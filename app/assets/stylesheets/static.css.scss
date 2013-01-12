@@ -1,3 +1,46 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.mainContainer
+{
+	background-color: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	border-radius: 1em;
+	padding: 1em 5em 1em 5em;
+	margin: 10% auto;
+	width:500px;
+	text-align: center;
+}
+h1
+{
+	line-height: 1em;
+	font-family: 'Questrial', sans-serif;
+}
+.mainAction
+{
+	padding: 3em 0 1em 0;
+}
+.actionButton, .actionButton:visited {
+  width: 500px;
+  padding: 10px 25px 10px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: -1px -1px 2px #618926;
+  background: -moz-linear-gradient(#98ba40, #a6c250 35%, #618926);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #98ba40),color-stop(.35, #a6c250),color-stop(1, #618926));
+  border: 1px solid #618926;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.actionButton:hover {
+  	background: -moz-linear-gradient(#a6c250, #98ba40,  35%, #618926);
+  	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #98ba40),color-stop(.35, #a6c250),color-stop(1, #a6c250));
+}

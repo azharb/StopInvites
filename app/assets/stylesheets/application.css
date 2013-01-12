@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+body
+{
+	background: url('/assets/fb_home.png') no-repeat;
+	color: #fff;
+	background-attachment: fixed;
+}

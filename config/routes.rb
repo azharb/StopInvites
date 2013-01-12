@@ -1,6 +1,10 @@
 Stopinvites::Application.routes.draw do
     
+  get "static/home"
+
   get "static/show"
+  
+  get "static/done"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -59,5 +63,7 @@ Stopinvites::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
     
-    root :to => 'static#:show'
+    root :to => 'static#home'
+    match "/invite" => 'static#show'
+    match "/done" => "static#done"
 end
